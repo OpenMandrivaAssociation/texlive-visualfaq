@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/visualfaq.doc.tar
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 Having trouble finding the answer to a LaTeX question? The
@@ -45,7 +43,6 @@ appropriate page in the UK TeX FAQ.
 %doc %{_texmfdistdir}/doc/latex/visualfaq/source/watermark.pdf
 %doc %{_texmfdistdir}/doc/latex/visualfaq/troubleshoot-vlf.pdf
 %doc %{_texmfdistdir}/doc/latex/visualfaq/visualFAQ.pdf
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,5 +53,3 @@ appropriate page in the UK TeX FAQ.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
