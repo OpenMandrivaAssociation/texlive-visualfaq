@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-visualfaq
 Version:	20100805
-Release:	1
+Release:	2
 Summary:	A Visual LaTeX FAQ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/visualFAQ
