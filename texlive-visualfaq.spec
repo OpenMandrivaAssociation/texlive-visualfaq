@@ -1,12 +1,6 @@
-# revision 19677
-# category Package
-# catalog-ctan /info/visualFAQ
-# catalog-date 2010-08-05 13:03:35 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-visualfaq
-Version:	20100805
-Release:	10
+Version:	20170414
+Release:	1
 Summary:	A Visual LaTeX FAQ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/visualFAQ
@@ -27,22 +21,7 @@ appropriate page in the UK TeX FAQ.
 
 #-----------------------------------------------------------------------
 %files
-%doc %{_texmfdistdir}/doc/latex/visualfaq/README
-%doc %{_texmfdistdir}/doc/latex/visualfaq/source/README
-%doc %{_texmfdistdir}/doc/latex/visualfaq/source/anotherarticle.pdf
-%doc %{_texmfdistdir}/doc/latex/visualfaq/source/book-montage.png
-%doc %{_texmfdistdir}/doc/latex/visualfaq/source/fuzzytext.png
-%doc %{_texmfdistdir}/doc/latex/visualfaq/source/labelgraph.pdf
-%doc %{_texmfdistdir}/doc/latex/visualfaq/source/lorem-ipsum-logo.png
-%doc %{_texmfdistdir}/doc/latex/visualfaq/source/musixtex.png
-%doc %{_texmfdistdir}/doc/latex/visualfaq/source/visfaq-html.png
-%doc %{_texmfdistdir}/doc/latex/visualfaq/source/visualFAQ.ind
-%doc %{_texmfdistdir}/doc/latex/visualfaq/source/visualFAQ.ind2
-%doc %{_texmfdistdir}/doc/latex/visualfaq/source/visualFAQ.out
-%doc %{_texmfdistdir}/doc/latex/visualfaq/source/visualFAQ.tex
-%doc %{_texmfdistdir}/doc/latex/visualfaq/source/watermark.pdf
-%doc %{_texmfdistdir}/doc/latex/visualfaq/troubleshoot-vlf.pdf
-%doc %{_texmfdistdir}/doc/latex/visualfaq/visualFAQ.pdf
+%doc %{_texmfdistdir}/doc/latex/visualfaq
 
 #-----------------------------------------------------------------------
 %prep
