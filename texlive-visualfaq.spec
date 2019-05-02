@@ -1,6 +1,6 @@
 Name:		texlive-visualfaq
-Version:	20180303
-Release:	2
+Version:	20190228
+Release:	1
 Summary:	A Visual LaTeX FAQ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/visualFAQ
