@@ -1,12 +1,12 @@
 Name:		texlive-visualfaq
-Version:	20190228
+Version:	61719
 Release:	1
 Summary:	A Visual LaTeX FAQ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/visualFAQ
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/visualfaq.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/visualfaq.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/visualfaq.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/visualfaq.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,7 +25,7 @@ appropriate page in the UK TeX FAQ.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
