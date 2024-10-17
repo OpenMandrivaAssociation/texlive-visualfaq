@@ -3,7 +3,7 @@ Version:	61719
 Release:	2
 Summary:	A Visual LaTeX FAQ
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/visualFAQ
+URL:		https://www.ctan.org/tex-archive/info/visualFAQ
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/visualfaq.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/visualfaq.doc.r%{version}.tar.xz
