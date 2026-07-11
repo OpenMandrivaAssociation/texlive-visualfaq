@@ -1,34 +1,23 @@
-Name:		texlive-visualfaq
-Version:	61719
-Release:	2
+%global tl_name visualfaq
+%global tl_revision 79618
+
+Name:		texlive-%{tl_name}
+Version:	%{tl_revision}
+Release:	1
 Summary:	A Visual LaTeX FAQ
 Group:		Publishing
-URL:		https://www.ctan.org/tex-archive/info/visualFAQ
-License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/visualfaq.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/visualfaq.doc.r%{version}.tar.xz
+URL:		https://www.ctan.org/tex-archive/info/visualfaq
+License:	lppl1.3c
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/visualfaq.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/visualfaq.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-Having trouble finding the answer to a LaTeX question? The
-Visual LaTeX FAQ is an innovative new search interface that
-presents over a hundred typeset samples of frequently requested
-document formatting. Simply click on a hyperlinked piece of
-text and the Visual LaTeX FAQ will send your Web browser to the
-appropriate page in the UK TeX FAQ.
+Having trouble finding the answer to a LaTeX question? The Visual LaTeX
+FAQ is an innovative new search interface that presents over a hundred
+typeset samples of frequently requested document formatting. Simply
+click on a hyperlinked piece of text and the Visual LaTeX FAQ will send
+your Web browser to the appropriate page in the TeX FAQ.
 
-#-----------------------------------------------------------------------
-%files
-%doc %{_texmfdistdir}/doc/latex/visualfaq
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar doc %{buildroot}%{_texmfdistdir}
